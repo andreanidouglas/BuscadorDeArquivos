@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 #include "CLib/libFiles.h"
 
 typedef struct
@@ -26,9 +26,9 @@ int main()
 	return (0);
 }
 
-int removeRegistro(FILE **arquivo, infLogin usuario, int id)
+int removeRegistro(FILE *arquivo, infLogin usuario, int id)
 {
-	while (!feof(arquivo) && usuario.status == 1)
+	while (!(feof(arquivo)) && usuario.status == 1)
 	{
 		fread(&usuario, sizeof(usuario), 1, arquivo);
 		if (!feof(arquivo) && id == usuario.id)

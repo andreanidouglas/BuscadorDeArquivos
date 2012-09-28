@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1189868556 source:c:\users\douglas\documents\netbeansprojects\oritclf\oritclf\projeto tlcf ori\cgerenciador\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1348872869 source:c:\users\douglas\documents\netbeansprojects\oritclf\oritclf\projeto tlcf ori\cfiles\reglogin.c
+	<stdio.h>
+	"CLib/libFiles.h"
+
+1348872199 c:\users\douglas\documents\netbeansprojects\oritclf\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
