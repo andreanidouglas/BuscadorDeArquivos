@@ -32,7 +32,13 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="..\CFiles\CLib\libFiles.h" />
+		<Unit filename="..\CFiles\CriaXML.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="..\CFiles\regLogin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\CFiles\verificalogin.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

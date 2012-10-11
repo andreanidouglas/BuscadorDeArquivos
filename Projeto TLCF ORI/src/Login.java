@@ -13,7 +13,8 @@
   | dos campos.                                                   |
   +---------------------------------------------------------------+*/
 	
-	import java.awt.*;
+        import java.io.*;	
+        import java.awt.*;
 	import javax.swing.*;
 	import java.awt.event.*;
   	
@@ -23,9 +24,9 @@ public class Login extends JFrame implements ActionListener
   	JTextField txt_user;
   	JPasswordField txt_pass;
   	JButton btn_ok, btn_cancel;
-    JLabel lbl_user, lbl_pass, lbl_introducao;
+        JLabel lbl_user, lbl_pass, lbl_introducao;
     
-    String senha = "pass", nome = "user";
+        String senha = "pass", nome = "user";
     
 	public Login()
 	  {
@@ -70,6 +71,28 @@ public class Login extends JFrame implements ActionListener
 		
   	}
   	
+        public void escreveArquivoDisco(String nomeArquivo)
+	{
+		FileOutputStream arquivo;
+		PrintStream escritor;
+		
+	    try 
+	    {               
+	        arquivo = new FileOutputStream(nomeArquivo);
+	        escritor = new PrintStream(arquivo);
+	        escritor.print(txt_user.getText()+"="+txt_pass.getText()+";");
+	                        
+	        arquivo.close();   
+	        
+	        System.out.println("Arquivo gerado com sucesso...");
+	    }
+	    
+	    catch(IOException erro)
+	    {
+	    	System.out.println("Não foi possível escrever o arquivo no disco...");
+	    }
+	}
+        
   	public void actionPerformed(ActionEvent evento)
   	{
   		Object objetoEvento = evento.getSource();
@@ -79,11 +102,16 @@ public class Login extends JFrame implements ActionListener
   			
   		if (objetoEvento == btn_ok)
   		{
-	  		if (txt_user.getText().equals(nome) && txt_pass.getText().equals(senha))
+                        escreveArquivoDisco("Files/login.txt");
+                        this.dispose();
+                        if (txt_user.getText().equals(nome) && txt_pass.getText().equals(senha))
+                        {
 	  			JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
+                        }
 	  		else
 				JOptionPane.showMessageDialog(this, "Senha Incorreta", "Aviso", JOptionPane.ERROR_MESSAGE);
-  		}
+                        System.exit(1);
+                }
   		
   	}
   	

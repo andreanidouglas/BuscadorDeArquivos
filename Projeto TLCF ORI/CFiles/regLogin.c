@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "CLib/libFiles.h"
-
+/*
 typedef struct
 {
 	char     login[10];
@@ -19,7 +19,7 @@ int main()
 	char local[10];
 	FILE *login;
 	infLogin usuario;
-	strcpy(local, "login.gdr");
+	strcpy(local, "login.xml");
 	printf("Local: %s", local);
 	retorno = abreArquivo(&login, local);
 	fechaArquivo(login);
@@ -40,3 +40,4 @@ int removeRegistro(FILE *arquivo, infLogin usuario, int id)
 	}
 	return (0);
 }
+*/
