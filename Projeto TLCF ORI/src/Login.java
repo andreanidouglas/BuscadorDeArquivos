@@ -6,7 +6,7 @@
   | Curso de Programação em Linguagem Java - Público Externo      |
   | Prof. João Benedito dos Santos Junior, Ph.D.                  |
   | Alunos: Guilherme Ricarte de Souza | Mat: 442891              |
-  |         Douglas Ravaneli Andriani  | Mat: 442888              |
+  |         Douglas Ravanelli Andriani  | Mat: 442888              |
   +---------------------------------------------------------------+
   | Login.java	                                                  |
   | Objetivo: Desenvolver uma tela com o usuario e senha com obje-| 
@@ -91,7 +91,7 @@ public class Login extends JFrame implements ActionListener
 	                        
 	        arquivo.close();   
 	        
-	        JOptionPane.showMessageDialog(this, "Arquivo gerado com sucesso...");
+	        System.out.println("Arquivo gerado com sucesso...");
 	    }
 	    
 	    catch(IOException erro)
@@ -111,17 +111,18 @@ public class Login extends JFrame implements ActionListener
             }
             if (objetoEvento == btn_ok)
             {
-                    escreveArquivoDisco("Files/login.txt");
-                    this.dispose();
-                    loginValidado validacao = new loginValidado();
-                    if (txt_user.getText().equals(nome) && txt_pass.toString().equals(senha))
-                    {
-                            JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
-                    }
-                    else {
-                    JOptionPane.showMessageDialog(this, "Senha Incorreta", "Aviso", JOptionPane.ERROR_MESSAGE);
+                escreveArquivoDisco("Files/login.txt");
+                this.dispose();
+                loginValidado validacao = new loginValidado();
+                if (txt_user.getText().equals(nome) && txt_pass.getPassword().equals(senha))
+                {
+                        JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
                 }
-
+                else
+                {
+                    JOptionPane.showMessageDialog(this, "Senha Incorreta", "Aviso", JOptionPane.ERROR_MESSAGE);
+                    System.exit(1);
+                }
             }
   	}
         public static byte[] gerarHash(String frase) {
