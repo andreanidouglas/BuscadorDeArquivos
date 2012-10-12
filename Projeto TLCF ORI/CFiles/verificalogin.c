@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-main()
+int main()
 {
   FILE *arquivo;
   char caractere, usuario[20]="", senha[10]="";
@@ -24,7 +24,8 @@ main()
             caractere = fgetc(arquivo);
             if (caractere != '=' && !feof(arquivo))
             {
-                usuario[i] = caractere; i++;
+                usuario[i] = caractere;
+                i++;
             }
          } while (caractere != '=' && !feof(arquivo));
 
@@ -42,11 +43,10 @@ main()
 
   printf("\n\nInformacoes recuperadas: \nUsuario: %s \nSenha: %s", usuario, senha);
 
+
   fclose(arquivo);
-
-    //chama a função de gerar XML
-
   getchar();
+  return (0);
 }
 
 

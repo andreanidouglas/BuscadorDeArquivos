@@ -1,4 +1,5 @@
-/*+---------------------------------------------------------------+
+/*
+  +---------------------------------------------------------------+
   | Pontifícia Universidade Católica de Minas Gerais - PUC Minas  |
   | Campus de Poços de Caldas									  |
   | Curso de Bacharelado em Ciência da Computação                 |
@@ -11,16 +12,18 @@
   | Objetivo: Desenvolver uma tela com o usuario e senha com obje-| 
   | do usuario entrar com os dados e o sistema efetuar a validação|
   | dos campos.                                                   |
-  +---------------------------------------------------------------+*/
+  +---------------------------------------------------------------+
+  */
 	
-        import java.io.*;	
-        import java.awt.*;
-	import javax.swing.*;
-	import java.awt.event.*;
+import java.awt.event.*;
+import java.io.*;
+import java.security.*;
+import javax.swing.*;
   	
   
 public class Login extends JFrame implements ActionListener
 {
+
   	JTextField txt_user;
   	JPasswordField txt_pass;
   	JButton btn_ok, btn_cancel;
@@ -73,53 +76,87 @@ public class Login extends JFrame implements ActionListener
   	
         public void escreveArquivoDisco(String nomeArquivo)
 	{
-		FileOutputStream arquivo;
+		byte hashPassword[];
+                String passwordHashed;
+                FileOutputStream arquivo;
 		PrintStream escritor;
 		
 	    try 
 	    {               
 	        arquivo = new FileOutputStream(nomeArquivo);
+                hashPassword = gerarHash(txt_pass.toString());
 	        escritor = new PrintStream(arquivo);
-	        escritor.print(txt_user.getText()+"="+txt_pass.getText()+";");
+                passwordHashed = stringHexa(hashPassword);
+	        escritor.print(txt_user.getText() + "="+ passwordHashed + ";");
 	                        
 	        arquivo.close();   
 	        
-	        System.out.println("Arquivo gerado com sucesso...");
+	        JOptionPane.showMessageDialog(this, "Arquivo gerado com sucesso...");
 	    }
 	    
 	    catch(IOException erro)
 	    {
-	    	System.out.println("Não foi possível escrever o arquivo no disco...");
+                System.out.println(erro.getMessage());
+	    	System.exit(1);
 	    }
 	}
         
+    @Override
   	public void actionPerformed(ActionEvent evento)
   	{
   		Object objetoEvento = evento.getSource();
   		
-  		if (objetoEvento == btn_cancel)
-  			System.exit(0);
-  			
-  		if (objetoEvento == btn_ok)
-  		{
-                        escreveArquivoDisco("Files/login.txt");
-                        this.dispose();
-                        if (txt_user.getText().equals(nome) && txt_pass.getText().equals(senha))
-                        {
-	  			JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
-                        }
-	  		else
-				JOptionPane.showMessageDialog(this, "Senha Incorreta", "Aviso", JOptionPane.ERROR_MESSAGE);
-                        System.exit(1);
+  		if (objetoEvento == btn_cancel) {
+                System.exit(0);
+            }
+            if (objetoEvento == btn_ok)
+            {
+                    escreveArquivoDisco("Files/login.txt");
+                    this.dispose();
+                    loginValidado validacao = new loginValidado();
+                    if (txt_user.getText().equals(nome) && txt_pass.toString().equals(senha))
+                    {
+                            JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
+                    }
+                    else {
+                    JOptionPane.showMessageDialog(this, "Senha Incorreta", "Aviso", JOptionPane.ERROR_MESSAGE);
                 }
-  		
+
+            }
   	}
-  	
+        public static byte[] gerarHash(String frase) {
+            try
+            {
+                MessageDigest md;
+                md = MessageDigest.getInstance("MD5");
+                md.update(frase.getBytes());
+                return md.digest();
+            }
+            catch (NoSuchAlgorithmException e)
+            {
+                System.out.println(e.getMessage());
+                System.exit(1);
+            }
+            return null;
+      }	
+        private static String stringHexa(byte[] bytes) 
+        {
+            StringBuilder s = new StringBuilder();
+            for (int i = 0; i < bytes.length; i++) {
+                int parteAlta = ((bytes[i] >> 4) & 0xf) << 4;
+                int parteBaixa = bytes[i] & 0xf;
+                if (parteAlta == 0) {
+                    s.append('0');
+                }
+                s.append(Integer.toHexString(parteAlta | parteBaixa));
+            }
+            return s.toString();
+         }
+    
+    
 	public static void main(String argumentos[])
   	{
   		JFrame aplicacao = new Login();
   		aplicacao.setVisible(true);
   	}
-  	
-  	
   }

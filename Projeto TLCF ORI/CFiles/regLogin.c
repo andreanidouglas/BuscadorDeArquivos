@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "CLib/libFiles.h"
-/*
+
 typedef struct
 {
 	char     login[10];
@@ -9,35 +9,49 @@ typedef struct
 	char     sobrenome[100];
 	int      id; //AUTO INCREMENT
 	int		 status;
+	char     cpf[13];
+	int      especial;
 } infLogin;
 
-int removeRegistro(FILE *arquivo, infLogin usuario, int id);
+int criaRegistro(FILE **arquivo, infLogin usuario, int id);
 
-int main()
+int criaRegistro(FILE **arquivo, infLogin usuario, int id)
 {
-	int retorno;
-	char local[10];
-	FILE *login;
-	infLogin usuario;
-	strcpy(local, "login.xml");
-	printf("Local: %s", local);
-	retorno = abreArquivo(&login, local);
-	fechaArquivo(login);
-	return (0);
+    char buffer[10];
+    int i;
+    fseek(*arquivo, 0L, SEEK_SET);
+    for (i=0;i<10;i++)
+    {
+        if (!feof(*arquivo))
+        {
+            buffer[i] = fgetc(*arquivo);
+            if(buffer[0] != '<')
+            {
+                if (feof(*arquivo))
+                {
+                    fprintf(*arquivo, "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?> \n");
+                    fprintf(*arquivo, "<CADASTRO>");
+                    fprintf(*arquivo, "\n</CADASTRO>");
+                    break;
+                }
+            }
+        }
+    }
+    {
+        fseek(*arquivo, 0L, SEEK_END);
+        fseek(*arquivo, -11 * sizeof(buffer), SEEK_CUR);
+        fprintf(*arquivo, "\n");
+        fprintf(*arquivo, "\n<LOGIN id = \"%d\">", id);
+        fprintf(*arquivo, "\n<username>\n%s\n</username>", usuario.login);
+        fprintf(*arquivo, "\n<password>\n%s\n</password>", usuario.senha);
+        fprintf(*arquivo, "\n<nome>\n%s\n</nome>", usuario.nome);
+        fprintf(*arquivo, "\n<sobrenome>\n%s\n</sobrenome>", usuario.sobrenome);
+        fprintf(*arquivo, "\n<status>\n%d\n</status>", 1);
+        fprintf(*arquivo, "\n<cpf>\n%s\n</cpf>", usuario.cpf);
+        fprintf(*arquivo, "\n<especial\n%d\n</especial>", usuario.especial);
+        fprintf(*arquivo, "\n</LOGIN>");
+        return (1);
+    }
 }
 
-int removeRegistro(FILE *arquivo, infLogin usuario, int id)
-{
-	while (!(feof(arquivo)) && usuario.status == 1)
-	{
-		fread(&usuario, sizeof(usuario), 1, arquivo);
-		if (!feof(arquivo) && id == usuario.id)
-		{
-			usuario.status = 0;
-			fwrite(&usuario, sizeof(usuario), 1, arquivo);
-			return (1);
-		}
-	}
-	return (0);
-}
-*/
+
