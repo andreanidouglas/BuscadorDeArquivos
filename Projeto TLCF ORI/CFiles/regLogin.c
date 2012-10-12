@@ -20,7 +20,6 @@ int main()
 	FILE *login;
 	infLogin usuario;
 	strcpy(local, "login.gdr");
-	printf("Local: %s", local);
 	retorno = abreArquivo(&login, local);
 	fechaArquivo(login);
 	return (0);
