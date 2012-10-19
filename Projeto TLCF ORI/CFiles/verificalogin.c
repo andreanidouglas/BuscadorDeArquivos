@@ -6,12 +6,12 @@
 int verificaLogin()
 {
     FILE *arquivo, *bancoUsuarios;
-    char caractere, usuario[20]="", senha[100]="", usuarioBanco[20], senhaBanco[100], buffer;
-    int  i = 0;
+    char caractere, usuario[20]="", senha[100]="", usuarioBanco[20]="", senhaBanco[100]="", buffer, codigoString[11]="";
+    int  i = 0, codigoNumerico=0;
 
     do
     {
-        arquivo=fopen("../Files/login.txt","rt");
+        arquivo=fopen("../Files/login.txt","rt+");
         if (arquivo == NULL)
             printf("Aguardando arquivo...\n");
     }
@@ -49,26 +49,42 @@ int verificaLogin()
     char modef[3] = "rt";
     abreArquivo(&bancoUsuarios, "bancoUsuarios.txt", modef);
 
-    i=0;
 
     while (!feof(bancoUsuarios))
     {
-
+         i=0;
         do
         {
             buffer = fgetc(bancoUsuarios);
+            if (buffer == '#')
+                break;
+            codigoString[i] = buffer;
+            i++;
+            codigoNumerico = atoi(codigoString);
+        }
+        while (buffer != '#' && !feof(bancoUsuarios));
+        i=0;
+        do
+        {
+            buffer = fgetc(bancoUsuarios);
+            if (buffer == '=')
+                break;
             usuarioBanco[i] = buffer;
             i++;
         }while (buffer != '=' && !feof(bancoUsuarios));
 
-        if (usuarioBanco == usuario)
+        if (!strcmp(usuario, usuarioBanco))
         {
             i=0;
             do
             {
-                senhaBanco[i] = buffer;
+                buffer = fgetc(bancoUsuarios);
+                if (buffer == ';')
+                    break;
+                senhaBanco[i] = buffer;;
+                i++;
             }while (buffer != ';' && !feof(bancoUsuarios));
-            if (senhaBanco == senha)
+            if (!(strcmp(senha, senhaBanco)))
             {
                 fputs("1@", arquivo);
                 return (1);
@@ -81,7 +97,7 @@ int verificaLogin()
         }
         else
         {
-            while (buffer != ';' || !feof(bancoUsuarios))
+            while ((buffer != ';') && (!feof(bancoUsuarios)))
             {
                 buffer = fgetc(bancoUsuarios);
             }

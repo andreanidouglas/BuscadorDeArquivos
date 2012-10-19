@@ -1,3 +1,1 @@
-user=0d5542c49f441eaba42fb9f20afd7604;
-douglas=9163248734g1kjh2vg8dstf9862t3;
-guilherme=17382496837ghd87sgt9a6rt917;
+user=pass;1@

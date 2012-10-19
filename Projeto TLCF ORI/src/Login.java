@@ -19,6 +19,7 @@ import java.awt.event.*;
 import java.io.*;
 import java.security.*;
 import javax.swing.*;
+
   	
   
 public class Login extends JFrame implements ActionListener
@@ -28,49 +29,66 @@ public class Login extends JFrame implements ActionListener
   	JPasswordField txt_pass;
   	JButton btn_ok, btn_cancel;
         JLabel lbl_user, lbl_pass, lbl_introducao;
-    
         String senha = "pass", nome = "user";
-    
+        loginValidado validacao = new loginValidado();
 	public Login()
-	  {
-	  	setBounds (550,250,220,175);
-	  	setTitle("Projeto de ORI + TCLF");
-	  	setResizable(false);
-	  	getContentPane().setLayout(null);
-	  		
-	  	txt_user = new JTextField("");
-	  	txt_user.setBounds(70,40,135,25);
-	  	
-	  	txt_pass = new JPasswordField("");
-		txt_pass.setBounds(70,75,135,25);
-		  	
-		btn_ok = new JButton("Ok");
-		btn_ok.setBounds(155,110,50,25);
-		btn_ok.addActionListener(this);
-				
-		btn_cancel = new JButton("Cancel");
-		btn_cancel.setBounds(70,110,75,25);
-		btn_cancel.addActionListener(this);
-				
-		lbl_introducao = new JLabel("Digite o Usuário e Senha:");
-		lbl_introducao.setBounds(10,05,150,30);
-		
-		lbl_user = new JLabel("Usuário:");
-		lbl_user.setBounds(10,35,50,40);
-		
-		lbl_pass = new JLabel("Senha:");
-		lbl_pass.setBounds(10,70,50,40);
-						
-		getContentPane().add(txt_user);
-		getContentPane().add(txt_pass);
-		getContentPane().add(btn_ok);
-		getContentPane().add(btn_cancel);
-		getContentPane().add(lbl_introducao);
-		getContentPane().add(lbl_user);
-		getContentPane().add(lbl_pass);
-		
-		System.out.println(nome);  
-		System.out.println(senha);
+	  {     
+                File login = new File("Files/login.txt");
+                if (login.exists())
+                {
+                    System.out.println("Arquivo Existe");
+                    if (validacao.loginValidado() == 1)
+                    {
+                        System.out.println("VALIDADO " + validacao.validado + " " + validacao.charBuffer);
+                        System.exit(1);
+                    }
+                    else if (validacao.loginValidado() == 0)
+                    {
+                        System.out.println("NAO VALIDADO " + validacao.validado + " " + validacao.charBuffer + " " + validacao.loginValidado());
+                        System.exit(1);
+                    }
+                }
+                else
+                {
+                    setBounds (550,250,220,175);
+                    setTitle("Projeto de ORI + TCLF");
+                    setResizable(false);
+                    getContentPane().setLayout(null);
+
+                    txt_user = new JTextField("");
+                    txt_user.setBounds(70,40,135,25);
+
+                    txt_pass = new JPasswordField("");
+                    txt_pass.setBounds(70,75,135,25);
+
+                    btn_ok = new JButton("Ok");
+                    btn_ok.setBounds(155,110,50,25);
+                    btn_ok.addActionListener(this);
+
+                    btn_cancel = new JButton("Cancel");
+                    btn_cancel.setBounds(70,110,75,25);
+                    btn_cancel.addActionListener(this);
+
+                    lbl_introducao = new JLabel("Digite o Usuário e Senha:");
+                    lbl_introducao.setBounds(10,05,150,30);
+
+                    lbl_user = new JLabel("Usuário:");
+                    lbl_user.setBounds(10,35,50,40);
+
+                    lbl_pass = new JLabel("Senha:");
+                    lbl_pass.setBounds(10,70,50,40);
+
+                    getContentPane().add(txt_user);
+                    getContentPane().add(txt_pass);
+                    getContentPane().add(btn_ok);
+                    getContentPane().add(btn_cancel);
+                    getContentPane().add(lbl_introducao);
+                    getContentPane().add(lbl_user);
+                    getContentPane().add(lbl_pass);
+
+                    System.out.println(nome);  
+                    System.out.println(senha);
+                }
 		
   	}
   	
@@ -87,7 +105,7 @@ public class Login extends JFrame implements ActionListener
                 hashPassword = gerarHash(txt_pass.toString());
 	        escritor = new PrintStream(arquivo);
                 passwordHashed = stringHexa(hashPassword);
-	        escritor.print(txt_user.getText() + "="+ passwordHashed + ";");
+	        escritor.print(txt_user.getText() + "=" + txt_pass.getText()+ ";");
 	                        
 	        arquivo.close();   
 	        
@@ -113,8 +131,7 @@ public class Login extends JFrame implements ActionListener
             {
                 escreveArquivoDisco("Files/login.txt");
                 this.dispose();
-                loginValidado validacao = new loginValidado();
-                if (txt_user.getText().equals(nome) && txt_pass.getPassword().equals(senha))
+                if (txt_user.getText().equals(nome) && txt_pass.getText().equals(senha))
                 {
                         JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
                 }
