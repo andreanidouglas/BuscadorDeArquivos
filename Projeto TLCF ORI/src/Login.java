@@ -29,6 +29,9 @@ public class Login extends JFrame implements ActionListener
         JLabel lbl_user, lbl_pass, lbl_introducao, lbl_cadastrar, lbl_fundo;
         ImageIcon img_fundo;
         
+        Runtime processo;
+        String linhaComando;
+        
         loginValidado validacao = new loginValidado();
         
 	public Login()
@@ -70,7 +73,7 @@ public class Login extends JFrame implements ActionListener
                     btn_ok = new JButton("Ok");
                     btn_ok.setBounds(520,190,50,25);
                     btn_ok.addActionListener(this);
-
+                    
                     btn_cancel = new JButton("Cancel");
                     btn_cancel.setBounds(440,190,75,25);
                     btn_cancel.addActionListener(this);
@@ -147,15 +150,18 @@ public class Login extends JFrame implements ActionListener
             {
                 escreveArquivoDisco("Files/login.txt");
                 this.dispose();
-               /* if (txt_user.getText().equals("") && txt_pass.getText().equals("pass"))
-                {
-                        JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
-                }
-                else
-                {
-                    JOptionPane.showMessageDialog(this, "Senha Incorreta", "Aviso", JOptionPane.ERROR_MESSAGE);
-                    System.exit(1);
-                }*/
+                loginValidado validacao = new loginValidado();
+                try
+		{
+			processo = Runtime.getRuntime();
+			linhaComando = "cmd /C start cGerenciador.exe";
+			processo.exec(linhaComando);
+		}	
+		catch(IOException erro)
+		{
+			
+		}
+
             }
   	}
         public static void main(String argumentos[])

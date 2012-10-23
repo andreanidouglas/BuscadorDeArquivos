@@ -12,8 +12,8 @@ int main()
 int abreArquivo (FILE **arquivo, char caminho[], char mode[])
 {
 	int tentativas = 0;
-	char path[60];
-	strcpy(path, "../Files/");
+	char path[60]="";
+	strcpy(path, "Files/");
 	strcat(path, caminho);
 	while (tentativas < 10)
 	{
@@ -21,7 +21,6 @@ int abreArquivo (FILE **arquivo, char caminho[], char mode[])
 		if (*arquivo != NULL)
 		{
 			printf("\nCriou arquivo...");
-			getchar();
 			return(1);
 		}
 		tentativas++;

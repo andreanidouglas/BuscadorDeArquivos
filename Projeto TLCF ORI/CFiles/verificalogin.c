@@ -11,7 +11,7 @@ int verificaLogin()
 
     do
     {
-        arquivo=fopen("../Files/login.txt","rt+");
+        arquivo=fopen("Files/login.txt","rt+");
         if (arquivo == NULL)
             printf("Aguardando arquivo...\n");
     }
@@ -89,11 +89,6 @@ int verificaLogin()
                 fputs("1@", arquivo);
                 return (1);
             }
-            else
-            {
-                fputs("0@", arquivo);
-                return (0);
-            }
         }
         else
         {
@@ -105,8 +100,8 @@ int verificaLogin()
     }
     if (feof(arquivo))
     {
-        fputs("2@", arquivo);
-        return (2);
+            fputs("0@", arquivo);
+            return (0);
     }
     fclose(arquivo);
     getchar();

@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin\Debug\cGerenciador" prefix_auto="1" extension_auto="1" />
+				<Option output="..\cGerenciador" prefix_auto="1" extension_auto="1" />
 				<Option object_output="bin\Debug" />
 				<Option type="1" />
 				<Option compiler="gcc" />
