@@ -2,6 +2,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import javax.swing.JFrame;
 
 public class loginValidado {
     char validado;
@@ -30,6 +31,7 @@ public class loginValidado {
             {
                 return (int)validado - 48 ;
             }
+
         }
         catch (IOException e)
         {

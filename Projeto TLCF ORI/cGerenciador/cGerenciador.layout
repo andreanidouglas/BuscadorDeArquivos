@@ -4,10 +4,10 @@
 	<File name="..\CFiles\CLib\libFiles.h" open="0" top="0" tabpos="3">
 		<Cursor position="187" topLine="0" />
 	</File>
-	<File name="..\CFiles\bancoUsuarios.c" open="1" top="1" tabpos="1">
-		<Cursor position="406" topLine="14" />
+	<File name="..\CFiles\bancoUsuarios.c" open="1" top="0" tabpos="1">
+		<Cursor position="465" topLine="6" />
 	</File>
-	<File name="..\CFiles\verificalogin.c" open="1" top="0" tabpos="2">
-		<Cursor position="2416" topLine="6" />
+	<File name="..\CFiles\verificalogin.c" open="1" top="1" tabpos="2">
+		<Cursor position="2391" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

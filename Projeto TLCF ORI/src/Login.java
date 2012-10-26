@@ -31,31 +31,13 @@ public class Login extends JFrame implements ActionListener
         
         Runtime processo;
         String linhaComando;
-        
-        loginValidado validacao = new loginValidado();
-        
+                        
 	public Login()
 	  {     
-                File login = new File("Files/login.txt");
-                if (login.exists())
-                {
-                    System.out.println("Arquivo Existe");
-                    if (validacao.loginValidado() == 1)
-                    {
-                        System.out.println("VALIDADO " + validacao.validado + " " + validacao.charBuffer);
-                        System.exit(1);
-                    }
-                    else if (validacao.loginValidado() == 0)
-                    {
-                        System.out.println("NAO VALIDADO " + validacao.validado + " " + validacao.charBuffer + " " + validacao.loginValidado());
-                        System.exit(1);
-                    }
-                }
-                else
-                {
-    ////////////////////////////////////
+        
+     ////////////////////////////////////
                     setBounds (400,200,600,380);
-                    setTitle("Atom System | Projeto de ORI + TCLF");
+                    setTitle("Projeto de ORI + TCLF");
                     setResizable(false);
                     getContentPane().setLayout(null);
 
@@ -112,57 +94,85 @@ public class Login extends JFrame implements ActionListener
                     getContentPane().add(lbl_user);
                     getContentPane().add(lbl_pass);
                     getContentPane().add(lbl_fundo);
-                }
   	}
   	
-        public void escreveArquivoDisco(String nomeArquivo)
+        public static void escreveArquivoDisco(String nomeArquivo, String dados, int flag)
 	{
-		byte hashPassword[];
-                String passwordHashed;
-                FileOutputStream arquivo;
+                FileOutputStream arquivo1;
 		PrintStream escritor;
 	    try 
 	    {               
-	        arquivo = new FileOutputStream(nomeArquivo);
-                escritor = new PrintStream(arquivo);
-                escritor.print(txt_user.getText() + "=" + txt_pass.getText()+ ";");
-	                        
-	        arquivo.close();   
-	        
-	        System.out.println("Arquivo gerado com sucesso...");
+                if (flag == 0)
+                {
+                    File arquivo = new File(nomeArquivo);
+                    if (!arquivo.exists())
+                    {
+                        arquivo.createNewFile();
+                    }
+                    FileWriter filewriter = new FileWriter(arquivo, true);
+                    try (PrintWriter printwriter = new PrintWriter(filewriter)) 
+                    {
+                        printwriter.println(dados);
+                        printwriter.flush();
+                    }
+                }
+                else
+                {
+                    arquivo1 = new FileOutputStream(nomeArquivo);
+                    escritor = new PrintStream(arquivo1);
+                    escritor.print(dados);
+
+                    arquivo1.close();   
+                }
+                System.out.println("Arquivo gerado com sucesso...");
 	    }
 	    
 	    catch(IOException erro)
 	    {
                 System.out.println(erro.getMessage());
-	    	System.exit(1);
+                System.exit(1);
 	    }
 	}
         
       	public void actionPerformed(ActionEvent evento)
   	{
-  		Object objetoEvento = evento.getSource();
+            Object objetoEvento = evento.getSource();
   		
-  		if (objetoEvento == btn_cancel) {
+            if (objetoEvento == btn_cancel) {
                 System.exit(0);
             }
             if (objetoEvento == btn_ok)
             {
-                escreveArquivoDisco("Files/login.txt");
-                this.dispose();
-                loginValidado validacao = new loginValidado();
+                escreveArquivoDisco("Files/login.txt",txt_user.getText() + "=" + txt_pass.getText()+ ";", 1);
                 try
 		{
-			processo = Runtime.getRuntime();
-			linhaComando = "cmd /C start cGerenciador.exe";
-			processo.exec(linhaComando);
+                    processo = Runtime.getRuntime();
+                    linhaComando = "cmd /C start cGerenciador.exe";
+                    processo.exec(linhaComando);
+                    
 		}	
 		catch(IOException erro)
 		{
-			
+                    System.out.println(erro.getMessage());
+                    JOptionPane.showMessageDialog(this, "Ocorreu um erro ao abrir o arquivo cGerenciador.exe", "Aviso", JOptionPane.ERROR_MESSAGE);
+                    System.exit(1);			
 		}
-
+                
+                //CRIA UM DELAY PARA AGUARDA O S.O CRIAR O ARQUIVO PARA ELE LER
+                try {  
+                    Thread.sleep(500);  
+                    verificaLogin verifica = new verificaLogin();
+                } catch (Exception e) {  
+                    e.printStackTrace();  
+                }
+                
             }
+            if (objetoEvento == btn_cadastrar)
+            {
+                JFrame cadastrar = new Cadastrar();
+                cadastrar.setVisible(true);
+            }
+            
   	}
         public static void main(String argumentos[])
   	{

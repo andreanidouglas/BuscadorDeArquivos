@@ -92,10 +92,11 @@ int verificaLogin()
         }
         else
         {
-            while ((buffer != ';') && (!feof(bancoUsuarios)))
-            {
+
+            do{
                 buffer = fgetc(bancoUsuarios);
-            }
+            }while ((buffer != '*') && (!feof(bancoUsuarios)));
+
         }
     }
     if (feof(arquivo))
