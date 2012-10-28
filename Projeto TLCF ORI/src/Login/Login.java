@@ -26,6 +26,8 @@ import java.awt.Image.*;
   
 public class Login extends JFrame implements ActionListener
 {
+    
+        
   	JTextField txt_user;
   	JPasswordField txt_pass;
   	JButton btn_ok, btn_cancel, btn_cadastrar;
@@ -37,7 +39,6 @@ public class Login extends JFrame implements ActionListener
                         
 	public Login()
 	  {     
-        
      ////////////////////////////////////
                     setBounds (400,200,600,380);
                     setTitle("Projeto de ORI + TCLF");
@@ -98,7 +99,7 @@ public class Login extends JFrame implements ActionListener
                     getContentPane().add(lbl_pass);
                     getContentPane().add(lbl_fundo);
   	}
-  	
+       
 
     @Override
       	public void actionPerformed(ActionEvent evento)
@@ -140,10 +141,5 @@ public class Login extends JFrame implements ActionListener
                 cadastrar.setVisible(true);
             }
             
-  	}
-        public static void main(String argumentos[])
-  	{
-  		JFrame aplicacao = new Login();
-  		aplicacao.setVisible(true);
   	}
   }

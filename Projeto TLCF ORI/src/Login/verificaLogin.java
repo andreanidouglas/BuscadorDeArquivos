@@ -1,6 +1,7 @@
 package Login;
 
 
+import BuscaAutomato.MainFrameAutomato;
 import java.io.File;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -19,7 +20,11 @@ public class verificaLogin extends JFrame {
             {
                 System.out.println("VALIDADO - ACESSO LIBERADO " + validacao.getValidado() + validacao.getCharBuffer());
                 JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
-                this.dispose();
+                //this.dispose();
+                MainFrameAutomato busca = new MainFrameAutomato();
+
+                
+                busca.setVisible(true);
             }
             else if (validacao.loginValidado() == 0)
             {
@@ -28,5 +33,4 @@ public class verificaLogin extends JFrame {
             }
         }
     }
-
 }
