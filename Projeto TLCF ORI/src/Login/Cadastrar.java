@@ -1,3 +1,6 @@
+package Login;
+
+import Utils.FilesOps;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -148,19 +151,20 @@ public class Cadastrar extends JFrame implements ActionListener
     }
     
     @Override
-    public void actionPerformed(ActionEvent evento) {
+    public void actionPerformed(ActionEvent evento)
+    {
 
         Object objetoEvento = evento.getSource();
-            if (objetoEvento == btn_cancel) {
+            if (objetoEvento == btn_cancel)
+            {
                 this.dispose();
             }
-            if (objetoEvento == btn_cad){
-                
+            if (objetoEvento == btn_cad)
+            {
                 String dados = ("1" + "#" + txt_user.getText() + "=" + txt_pass.getText()+ ";" + txt_nome.getText()+ "%" + txt_dta_nasc.getText() + "%" + txt_rua.getText()+ "%" + txt_num.getText()+ "%" + txt_comp.getText()+ "%" + txt_cid.getText()+ "%" + txt_cep.getText()+ "%" + txt_tel.getText()+ "%" +  txt_email.getText()+ "%" +  txt_cpf.getText()+ "%" + txt_rg.getText()+ "*");
-                Login.escreveArquivoDisco("Files/bancoUsuarios.txt", dados, 0);
+                FilesOps.escreveArquivoDisco("Files/bancoUsuarios.txt", dados, 0);
                 JOptionPane.showMessageDialog(this, "Arquivo Gravado com Sucesso !", "Aviso", JOptionPane.PLAIN_MESSAGE);
                 this.dispose();
             }   
     }
-
 }

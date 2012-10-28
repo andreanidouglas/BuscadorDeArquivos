@@ -1,3 +1,5 @@
+package Login;
+
 /*
   +---------------------------------------------------------------+
   | Pontifícia Universidade Católica de Minas Gerais - PUC Minas  |
@@ -15,6 +17,7 @@
   +---------------------------------------------------------------+
   */
 	
+import Utils.FilesOps;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
@@ -96,44 +99,8 @@ public class Login extends JFrame implements ActionListener
                     getContentPane().add(lbl_fundo);
   	}
   	
-        public static void escreveArquivoDisco(String nomeArquivo, String dados, int flag)
-	{
-                FileOutputStream arquivo1;
-		PrintStream escritor;
-	    try 
-	    {               
-                if (flag == 0)
-                {
-                    File arquivo = new File(nomeArquivo);
-                    if (!arquivo.exists())
-                    {
-                        arquivo.createNewFile();
-                    }
-                    FileWriter filewriter = new FileWriter(arquivo, true);
-                    try (PrintWriter printwriter = new PrintWriter(filewriter)) 
-                    {
-                        printwriter.println(dados);
-                        printwriter.flush();
-                    }
-                }
-                else
-                {
-                    arquivo1 = new FileOutputStream(nomeArquivo);
-                    escritor = new PrintStream(arquivo1);
-                    escritor.print(dados);
 
-                    arquivo1.close();   
-                }
-                System.out.println("Arquivo gerado com sucesso...");
-	    }
-	    
-	    catch(IOException erro)
-	    {
-                System.out.println(erro.getMessage());
-                System.exit(1);
-	    }
-	}
-        
+    @Override
       	public void actionPerformed(ActionEvent evento)
   	{
             Object objetoEvento = evento.getSource();
@@ -143,7 +110,7 @@ public class Login extends JFrame implements ActionListener
             }
             if (objetoEvento == btn_ok)
             {
-                escreveArquivoDisco("Files/login.txt",txt_user.getText() + "=" + txt_pass.getText()+ ";", 1);
+                FilesOps.escreveArquivoDisco("Files/login.txt",txt_user.getText() + "=" + txt_pass.getText()+ ";", 1);
                 try
 		{
                     processo = Runtime.getRuntime();
@@ -162,8 +129,8 @@ public class Login extends JFrame implements ActionListener
                 try {  
                     Thread.sleep(500);  
                     verificaLogin verifica = new verificaLogin();
-                } catch (Exception e) {  
-                    e.printStackTrace();  
+                } catch (Exception e) { 
+                    e.printStackTrace();
                 }
                 
             }

@@ -1,3 +1,5 @@
+package Login;
+
 
 import java.io.File;
 import javax.swing.JFrame;
@@ -15,13 +17,13 @@ public class verificaLogin extends JFrame {
             System.out.println("Arquivo Existe");
             if (validacao.loginValidado() == 1)
             {
-                System.out.println("VALIDADO - ACESSO LIBERADO " + validacao.validado + validacao.charBuffer);
+                System.out.println("VALIDADO - ACESSO LIBERADO " + validacao.getValidado() + validacao.getCharBuffer());
                 JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
                 this.dispose();
             }
             else if (validacao.loginValidado() == 0)
             {
-                System.out.println("NAO VALIDADO - SENHA INCORRETA OU USUÁRIO INEXISTENTE" + validacao.validado + " " + validacao.charBuffer + " " + validacao.loginValidado());
+                System.out.println("NAO VALIDADO - SENHA INCORRETA OU USUÁRIO INEXISTENTE" + validacao.getValidado() + " " + validacao.getCharBuffer() + " " + validacao.loginValidado());
                 JOptionPane.showMessageDialog(this, "Senha Incorreta ou Usuário Inexistente", "Aviso", JOptionPane.ERROR_MESSAGE);
             }
         }

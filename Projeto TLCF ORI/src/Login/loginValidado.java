@@ -1,42 +1,29 @@
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import javax.swing.JFrame;
+package Login;
+
+import Utils.FilesOps;
 
 public class loginValidado {
-    char validado;
-    char charBuffer;
+    private char validado;
+    private char charBuffer;
 
     public int loginValidado()
     {
-        try
-        {
-            FileInputStream arquivo;
-            arquivo = new FileInputStream ("Files/login.txt");
-            Reader pointer;
-            pointer = new InputStreamReader(arquivo);
-            int intBuffer = pointer.read();
-            while (intBuffer != -1)
+        char validacao;
+ 
+            validacao = FilesOps.lerArquivoDisco("Files/login.txt", '@');
+            if (((int)validacao - 48) >= 0 && ((int)validacao - 48) < 3)
             {
-               charBuffer = (char)intBuffer;
-               if (charBuffer == '@')
-               {
-                   break;
-               }
-               validado = charBuffer;
-               intBuffer = pointer.read();
+                return (int)validacao - 48 ;
             }
-            if (((int)validado - 48) >= 0 && ((int)validado - 48) < 3)
-            {
-                return (int)validado - 48 ;
-            }
-
-        }
-        catch (IOException e)
-        {
-            System.out.println("Exception");
-        }
+        
         return 0;
+    }
+
+    public char getValidado() {
+        return validado;
+    }
+
+    public char getCharBuffer() {
+        return charBuffer;
     }
 }
