@@ -1,23 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package BuscaAutomato.UploadFiles;
 
-import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class UploadFrame extends JFrame implements ActionListener{
     private JFileChooser escolherArquivo;
     private JTextField tftxArquivoBuscado, tftxTag1, tftxTag2, tftxTag3;
-    private JButton btnOpenFileChooser;
+    private JButton btnOpenFileChooser, btnUploadFile;
     
     public UploadFrame() 
     {
@@ -41,13 +34,16 @@ public class UploadFrame extends JFrame implements ActionListener{
         btnOpenFileChooser.addActionListener(this);
         btnOpenFileChooser.setBounds(500,100,100,45);
         
-   
+        btnUploadFile = new JButton("Enviar Arquivo");
+        btnUploadFile.addActionListener(this);
+        btnUploadFile.setBounds(500, 200, 100, 45);
         
         getContentPane().add(tftxArquivoBuscado);
         getContentPane().add(btnOpenFileChooser);
         getContentPane().add(tftxTag1);
         getContentPane().add(tftxTag2);
         getContentPane().add(tftxTag3);
+        getContentPane().add(btnUploadFile);
     }
     
     @Override
@@ -63,6 +59,17 @@ public class UploadFrame extends JFrame implements ActionListener{
             }  
             System.out.println("Arquivo selecionado: " + escolherArquivo.getSelectedFile().toString()); 
             tftxArquivoBuscado.setText(escolherArquivo.getSelectedFile().toString());
+        }
+        else if(evento == btnUploadFile)
+        {
+            try
+            {
+                CopiaArquivo.CopiaArquivo(escolherArquivo.getSelectedFile());
+            }
+            catch (Exception error)
+            {
+                error.printStackTrace();
+            }
         }
     }
     
