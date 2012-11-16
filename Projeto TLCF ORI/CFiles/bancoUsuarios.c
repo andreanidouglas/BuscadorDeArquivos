@@ -3,9 +3,23 @@
 #include <string.h>
 #include "../CFiles/CLib/libFiles.h"
 
-int main()
+int main(int argc, char* argv[])
 {
-    verificaLogin();
+    /*if (argc != 2)
+    {
+        exit(1);
+    }*/
+    printf("\nArgumento: %d", atoi(argv[1]));
+
+    if (atoi(argv[1]) == 1)
+    {
+        verificaLogin();
+    }
+    else //if (atoi(argv[1]) == 0)
+    {
+        criaXML();
+    }
+
     return (0);
 }
 
@@ -13,7 +27,7 @@ int abreArquivo (FILE **arquivo, char caminho[], char mode[])
 {
 	int tentativas = 0;
 	char path[60]="";
-	strcpy(path, "Files/");
+	strcpy(path, "../Files/");
 	strcat(path, caminho);
 	while (tentativas < 10)
 	{

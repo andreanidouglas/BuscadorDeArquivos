@@ -115,7 +115,7 @@ public class Login extends JFrame implements ActionListener
                 try
 		{
                     processo = Runtime.getRuntime();
-                    linhaComando = "cmd /C start cGerenciador.exe";
+                    linhaComando = "cmd /C start cGerenciador.exe 1";
                     processo.exec(linhaComando);
                     
 		}	
@@ -128,7 +128,7 @@ public class Login extends JFrame implements ActionListener
                 
                 //CRIA UM DELAY PARA AGUARDA O S.O CRIAR O ARQUIVO PARA ELE LER
                 try {  
-                    Thread.sleep(500);  
+                    Thread.sleep(2000);  
                     verificaLogin verifica = new verificaLogin();
                 } catch (Exception e) { 
                     e.printStackTrace();

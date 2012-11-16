@@ -52,7 +52,7 @@ public class UploadFrame extends JFrame implements ActionListener{
         if (evento == btnOpenFileChooser)
         {
             escolherArquivo = new JFileChooser();
-            escolherArquivo.setFileFilter(new ExtensionFileFilter("Arquivos .jpg, .bmp, .gif, .txt, .doc, .docx", "jpg", "bmp", "gif", "txt", "doc", "docx"));
+            escolherArquivo.setFileFilter(new ExtensionFileFilter("Arquivos .jpg, .bmp, .gif, .txt, .doc, .docx", "jpg", "bmp", "gif", "txt", "doc", "docx", "png", "mp3", "wav"));
             if (escolherArquivo.showOpenDialog(this) != JFileChooser.APPROVE_OPTION) 
             {
                 return;
@@ -64,7 +64,10 @@ public class UploadFrame extends JFrame implements ActionListener{
         {
             try
             {
-                CopiaArquivo.CopiaArquivo(escolherArquivo.getSelectedFile());
+                RecordFiles gravacao = new RecordFiles();
+                gravacao.setMetadados(tftxTag1.getText() + " " + tftxTag2.getText() + " " + tftxTag3.getText());
+                gravacao.setUploadArquivo(CopiaArquivo.CopiaArquivo(escolherArquivo.getSelectedFile()));
+                gravacao.gravarDisco();
             }
             catch (Exception error)
             {
@@ -72,5 +75,4 @@ public class UploadFrame extends JFrame implements ActionListener{
             }
         }
     }
-    
 }

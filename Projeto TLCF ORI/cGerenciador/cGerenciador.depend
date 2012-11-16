@@ -30,11 +30,13 @@
 	<stdio.h>
 	<stdlib.h>
 
-1349990585 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\criaxml.c
+1353051229 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\criaxml.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
 
-1350599468 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\verificalogin.c
+1353039682 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\verificalogin.c
 	<stdio.h>
 	<stdlib.h>
 	"../CFiles/CLib/libFiles.h"
@@ -43,7 +45,7 @@
 	<stdio.h>
 	"CLib/libFiles.h"
 
-1350596779 c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
+1353046463 c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -63,7 +65,7 @@
 	<string.h>
 	"../CFiles/CLib/libFiles.h"
 
-1350596779 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\bancousuarios.c
+1353043579 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\bancousuarios.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

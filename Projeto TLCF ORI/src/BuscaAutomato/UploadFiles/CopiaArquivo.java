@@ -4,7 +4,7 @@ import java.io.*;
 
 public class CopiaArquivo {
     
-    public static void CopiaArquivo(File inputFilePath) throws IOException
+    public static File CopiaArquivo(File inputFilePath) throws IOException
     {
         String strOutputFile;
         strOutputFile = "Files/" + inputFilePath.getName();
@@ -50,6 +50,7 @@ public class CopiaArquivo {
                 rafo.close();
             }
             System.out.println("Arquivo Copiado com Sucesso...");
+            File fileCreated = new File("Files/" + inputFilePath.getName());
             
             
             //fecha todos os streams abertos        
@@ -60,11 +61,13 @@ public class CopiaArquivo {
             fos.close();
             bos.close();
             dos.close();
-
+            
+            return fileCreated;
         }
         catch (Exception error)
         {
             error.printStackTrace();
         }
+        return null;
     }    
 }

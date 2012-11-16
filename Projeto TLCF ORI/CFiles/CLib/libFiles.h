@@ -8,3 +8,8 @@ void fechaArquivo(FILE *arquivo);
 
 int verificaLogin();
 
+int criaXML();
+
+int recuperaRegistros(FILE **BancoArquivos, char tag[][100], char *tipo);
+
+
