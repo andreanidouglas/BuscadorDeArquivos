@@ -10,6 +10,8 @@ int verificaLogin();
 
 int criaXML();
 
-int recuperaRegistros(FILE **BancoArquivos, char tag[][100], char *tipo);
+void recuperaRegistros(FILE *BancoArquivos, char tag[][100], char *tipo);
+
+int verificaRegistroIncluso(FILE **BancoArquivos);
 
 

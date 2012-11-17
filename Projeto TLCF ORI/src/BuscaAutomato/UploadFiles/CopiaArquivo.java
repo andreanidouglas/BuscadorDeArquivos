@@ -52,7 +52,6 @@ public class CopiaArquivo {
             System.out.println("Arquivo Copiado com Sucesso...");
             File fileCreated = new File("Files/" + inputFilePath.getName());
             
-            
             //fecha todos os streams abertos        
             rafi.close();
             fis.close();

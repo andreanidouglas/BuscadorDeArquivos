@@ -77,3 +77,25 @@
 	<string.h>
 	"../CFiles/CLib/libFiles.h"
 
+1353131653 source:c:\users\douglas\documents\github\oritclf\projeto tlcf ori\cfiles\bancousuarios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353133925 c:\users\douglas\documents\github\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1353126699 source:c:\users\douglas\documents\github\oritclf\projeto tlcf ori\cfiles\verificalogin.c
+	<stdio.h>
+	<stdlib.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353137730 source:c:\users\douglas\documents\github\oritclf\projeto tlcf ori\cfiles\criaxml.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+

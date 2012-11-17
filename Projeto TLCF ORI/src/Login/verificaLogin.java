@@ -22,8 +22,6 @@ public class verificaLogin extends JFrame {
                 JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
                 //this.dispose();
                 MainFrameAutomato busca = new MainFrameAutomato();
-
-                
                 busca.setVisible(true);
             }
             else if (validacao.loginValidado() == 0)

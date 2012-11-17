@@ -2,6 +2,8 @@
 package BuscaAutomato.UploadFiles;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -36,21 +38,20 @@ public class RecordFiles
 
     public void gravarDisco() throws IOException
     {
+        try (FileWriter escritor = new FileWriter(metaFile, true); PrintWriter sobrescritor = new PrintWriter(escritor)) {
         metaFile = new File("Files/bancoArquivos.txt");
         if (!metaFile.exists())
         {
                 metaFile.createNewFile();
                 fileId = 0L;
+                sobrescritor.println("Banco De Arquivos:"); //necessario para a correta execucao do codigo em C                
         }
         else 
         {
             fileId = getFileId(metaFile) + 1;
         }
-        try (FileWriter escritor = new FileWriter(metaFile, true)) {
-            PrintWriter sobrescritor = new PrintWriter(escritor);
-            sobrescritor.println(fileId.toString() + '#' + uploadArquivo.getName() + '=' + metadados + '@' + getTipoArquivo(uploadArquivo) + "$" + 0);
+            sobrescritor.println(fileId.toString() + '#' + uploadArquivo.getName() + '=' + metadados + '@' + getTipoArquivo(uploadArquivo) + '$' + 0 + ';');
             sobrescritor.flush();
-            sobrescritor.close();
         }
     }
 
@@ -58,13 +59,21 @@ public class RecordFiles
     {
         FileReader leitor = new FileReader(bancoArquivos);
         int c;
-        String leitura = "";
+        
+        String leitura = null;
+       
+              
         while ((c = leitor.read()) != -1)
         {
-            if ((char)c == '#')
+            if ((char)c == '\n')
             {
-                break;
+                leitor.mark(40);
             }
+            
+        }
+        leitor.reset();
+        while ((c=leitor.read()) != '#') 
+        {
             leitura = leitura + (char)c;
         }
         return Long.parseLong(leitura);
@@ -101,7 +110,7 @@ public class RecordFiles
            case "wav":
                return "Audio";
            case "txt":
-               return "Audio";
+               return "Texto";
            default:
                return "Não definido";
        }

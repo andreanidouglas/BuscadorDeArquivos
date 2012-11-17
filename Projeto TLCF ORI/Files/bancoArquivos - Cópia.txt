@@ -1,4 +1,0 @@
-0#3.jpg=tag1 tag2 tag3@Imagem$1
-0#3.jpg=tag3 tag4 tag6@Imagem$1
-0#3.jpg=tag877 tag43 tag120@Imagem$0
-0#3.jpg=tag9 tag8 tag7@Imagem$1

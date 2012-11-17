@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Automato>
+<Alfabeto s0="a" s1="b" s2="c" s3="d" s4="e" s5="f" s6="g" s7="h" s8="i" s9="j" s10="k" s11="l" s12="m" s13="n" s14="o" s15="p" s16="q" s17="r" s18="s" s19="t" s20="u" s21="v" s22="w" s23="x" s24="y" s25="z"/>
+</Automato>

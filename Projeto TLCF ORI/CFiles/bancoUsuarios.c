@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[])
 {
-    /*if (argc != 2)
+   /*if (argc != 2)
     {
         exit(1);
     }*/
@@ -49,21 +49,4 @@ void fechaArquivo(FILE *arquivo)
 		fclose(arquivo);
 		return;
 	}
-}
-
-
-int criaUsuario(FILE **arquivo)
-{
-    FILE *bancoUsuarios, *login;
-    char buffer;
-    abreArquivo(&bancoUsuarios, "bancoUsuarios.txt", "wt+");
-    abreArquivo(&login, "login.txt", "rt+");
-
-    while (!feof(login))
-    {
-        buffer = fgetc(login);
-        fputc(buffer, bancoUsuarios);
-        return (1);
-    }
-    return (0);
 }
