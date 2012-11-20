@@ -1,4 +1,0 @@
-Banco de Arquivos:
-0#asd.txt=tag1 tag2 tag3@Audio$1;
-1#dvasdvsdg.txt=tag1 tag2 tag3@Audio$1;
-1#dasdwqe.txt=tag1 tag2 tag3@Audio$1;

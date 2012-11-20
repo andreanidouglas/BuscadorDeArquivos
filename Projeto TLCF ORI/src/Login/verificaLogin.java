@@ -19,10 +19,9 @@ public class verificaLogin extends JFrame {
             if (validacao.loginValidado() == 1)
             {
                 System.out.println("VALIDADO - ACESSO LIBERADO " + validacao.getValidado() + validacao.getCharBuffer());
-                JOptionPane.showMessageDialog(this, "Acesso Liberado", "Aviso", JOptionPane.PLAIN_MESSAGE);
-                //this.dispose();
                 MainFrameAutomato busca = new MainFrameAutomato();
                 busca.setVisible(true);
+                
             }
             else if (validacao.loginValidado() == 0)
             {

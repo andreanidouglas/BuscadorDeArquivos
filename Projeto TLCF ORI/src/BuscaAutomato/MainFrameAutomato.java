@@ -16,24 +16,24 @@ public class MainFrameAutomato extends JFrame implements ActionListener
 
     public MainFrameAutomato()
     {
-        setBounds (400,200,600,380);
-        setTitle("Projeto de ORI + TCLF");
+        setBounds (350,150,700,480);
+        setTitle("Pesquisa | Projeto de ORI + TCLF");
         setResizable(false);
         getContentPane().setLayout(null);
         
-        tftxcampoBusca = new JTextField("");
-        tftxcampoBusca.setBounds(100,100,200,45);
-        
         lblCampoBusca = new JLabel();
-        lblCampoBusca.setText("BUSCA");
-        lblCampoBusca.setBounds(95, 100, 50, 45);
+        lblCampoBusca.setText("Buscar:");
+        lblCampoBusca.setBounds(05,20,320,25);
         
-        btnBusca = new JButton("Buscar");
-        btnBusca.setBounds(300, 100, 50, 45);
+        tftxcampoBusca = new JTextField("O que deseja procurar?");
+        tftxcampoBusca.setBounds(60,20,405,25);
+                
+        btnBusca = new JButton("Ir");
+        btnBusca.setBounds(475,20,50,25);
         btnBusca.addActionListener(this);
         
-        btnUpload = new JButton("Upload");
-        btnUpload.setBounds(400, 100, 100, 45);
+        btnUpload = new JButton("Enviar Arquivos");
+        btnUpload.setBounds(535,20,150,25);
         btnUpload.addActionListener(this);
         
         getContentPane().add(tftxcampoBusca);
@@ -44,7 +44,7 @@ public class MainFrameAutomato extends JFrame implements ActionListener
     
     public void closeAutomatoMainFrame()
     {
-        this.dispose();
+        //this.dispose();
     }
     @Override
     

@@ -117,7 +117,6 @@ public class Login extends JFrame implements ActionListener
                     processo = Runtime.getRuntime();
                     linhaComando = "cmd /C start cGerenciador.exe 1";
                     processo.exec(linhaComando);
-                    
 		}	
 		catch(IOException erro)
 		{

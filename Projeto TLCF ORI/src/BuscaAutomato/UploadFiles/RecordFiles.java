@@ -21,8 +21,6 @@ public class RecordFiles
     public RecordFiles() {
     }
 
-    
-    
     public void setUploadArquivo(File uploadArquivo) {
         this.uploadArquivo = uploadArquivo;
     }
@@ -39,7 +37,7 @@ public class RecordFiles
     public void gravarDisco() throws IOException
     {
         try (FileWriter escritor = new FileWriter(metaFile, true); PrintWriter sobrescritor = new PrintWriter(escritor)) {
-        metaFile = new File("Files/bancoArquivos.txt");
+        metaFile = new File("/Files/bancoArquivos.txt");
         if (!metaFile.exists())
         {
                 metaFile.createNewFile();

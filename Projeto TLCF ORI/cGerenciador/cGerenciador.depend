@@ -16,19 +16,21 @@
 	<stdio.h>
 	"CLib/libFiles.h"
 
-1350621878 c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
+1353365596 c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1350951115 source:c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\verificalogin.c
+1353365220 source:c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\verificalogin.c
 	<stdio.h>
 	<stdlib.h>
 	"../CFiles/CLib/libFiles.h"
 
-1350621878 source:c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\criaxml.c
+1353365596 source:c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\criaxml.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
 
 1353051229 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\criaxml.c
 	<stdio.h>
