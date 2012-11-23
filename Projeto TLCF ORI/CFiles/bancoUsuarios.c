@@ -8,10 +8,8 @@ int main(int argc, char* argv[])
    if (argc != 2)
     {
         //exit(1);
-        system("Pause");
     }
     printf("\nArgumento: %d", atoi(argv[1]));
-    system("Pause");
     if (atoi(argv[1]) == 1)
     {
         verificaLogin();
@@ -20,7 +18,6 @@ int main(int argc, char* argv[])
     {
         criaXML();
     }
-
     return (0);
 }
 

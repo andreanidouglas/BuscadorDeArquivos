@@ -26,7 +26,7 @@ int criaXML()
     if (BancoArquivos == NULL)
     {
         printf("Banco de arquivos nao existe");
-        system("Pause");
+
     }
 
 
@@ -39,7 +39,7 @@ int criaXML()
     fprintf(xmlAutomato, "/>");
 
 
-    system("Pause");
+
 
     while (!feof(BancoArquivos))
     {
