@@ -18,7 +18,7 @@ public class MainFrameAutomato extends JFrame implements ActionListener
     private String textoBusca, tipo;
     private String[] textos;
     private int i;
-    private String[] retornoBusca;
+    private String retornoBusca;
     public MainFrameAutomato()
     {
         setBounds (350,150,700,480);
@@ -80,10 +80,15 @@ public class MainFrameAutomato extends JFrame implements ActionListener
                 }
                 for(i=0;i<textos.length;i++)
                 {
+                    int j=0;
                     tipo = tipo.trim();
-                    retornoBusca = busca.lerXML(textos[i], tipo);
-                    if (retornoBusca != null)
-                        tftxcampoBusca.setText(retornoBusca[0]);
+                    while (j<30)
+                    {
+                        retornoBusca = busca.lerXML(textos[i], tipo, j);
+                        if (retornoBusca != null)
+                            tftxcampoBusca.setText(retornoBusca);
+                        j++;
+                    }
                 }
             } 
             catch (Exception ex) {

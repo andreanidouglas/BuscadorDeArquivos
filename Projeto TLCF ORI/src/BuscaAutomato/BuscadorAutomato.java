@@ -17,17 +17,21 @@ public class BuscadorAutomato
     public static String idArquivo,tipoArquivo, caminhoArquivo, idPalavra, proxEstado, letraAutomato, idEstado;
     int i,j,k,l,m, totalTagsArquivo; 
     char[] stringBusca;
-    private String[] retornoResultado, vazio;
+    
    
     public BuscadorAutomato() {
     }
     
     
-    public String[] lerXML(String busca, String tipo)throws Exception
+    public String lerXML(String busca, String tipo, int f)throws Exception
     {
+        
+        String[] retornoResultado;
+        retornoResultado = new String[1];
         stringBusca = busca.toCharArray();
         m=1;
-        vazio=null;
+        String retorno="";
+        String[] vazio=null;
         construtorDocumento = DocumentBuilderFactory.newInstance();
         parser = construtorDocumento.newDocumentBuilder();
         documentoXML = parser.parse("Files/Automato.xml");
@@ -43,16 +47,13 @@ public class BuscadorAutomato
 
             for (i=0; i < totalTagsArquivo; i++) 
             {
-                listaArquivos = (Element)listaTagsArquivo.item(i);
-                idArquivo = listaArquivos.getAttribute("id");
-                tipoArquivo = listaArquivos.getAttribute("tipo");
-                caminhoArquivo = listaArquivos.getAttribute("caminho");
+                listaArquivos = (Element)listaTagsArquivo.item(f);
                 if(!tipo.isEmpty() && !tipo.equals(tipoArquivo))
                 {
-                    return vazio;
+                    return null;
                 }
                 listaTagsPalavras = listaArquivos.getElementsByTagName("Palavra");
-                System.out.println("id tipo caminho:" + idArquivo + tipoArquivo + caminhoArquivo);
+                System.out.println("id tipo caminho:" + idArquivo + tipoArquivo +" "+ caminhoArquivo);
                 
 
                 for (j=0; j<listaTagsPalavras.getLength();j++)
@@ -74,15 +75,22 @@ public class BuscadorAutomato
                         
                         if(stringBusca[k] != letraAutomato.charAt(0))
                         {
-                            return vazio;
+                            return null;
+                        }
+                        else
+                        {
+                            idArquivo = listaArquivos.getAttribute("id");
+                tipoArquivo = listaArquivos.getAttribute("tipo");
+                caminhoArquivo = listaArquivos.getAttribute("caminho");
                         }
                     }
-                    retornoResultado[m] = caminhoArquivo.toLowerCase();
+                    System.out.println(caminhoArquivo.toLowerCase());
+                    retorno = caminhoArquivo.toLowerCase();
                     m++;
                 }
                 
             }
-            return retornoResultado;    		
+            return retorno;    		
      	}
      	catch(Exception erro)
      	{
