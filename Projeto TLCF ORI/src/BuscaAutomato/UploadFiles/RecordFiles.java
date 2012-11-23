@@ -36,18 +36,23 @@ public class RecordFiles
 
     public void gravarDisco() throws IOException
     {
-        try (FileWriter escritor = new FileWriter(metaFile, true); PrintWriter sobrescritor = new PrintWriter(escritor)) {
-        metaFile = new File("/Files/bancoArquivos.txt");
+        metaFile = new File("Files/bancoArquivos.txt");
+        
+        
         if (!metaFile.exists())
         {
                 metaFile.createNewFile();
+                FileWriter reescritor = new FileWriter(metaFile, true); 
+                PrintWriter resobrescritor = new PrintWriter(reescritor);
                 fileId = 0L;
-                sobrescritor.println("Banco De Arquivos:"); //necessario para a correta execucao do codigo em C                
+                resobrescritor.println("Banco De Arquivos:"); //necessario para a correta execucao do codigo em C                
         }
         else 
         {
+            
             fileId = getFileId(metaFile) + 1;
         }
+        try (FileWriter escritor = new FileWriter(metaFile, true); PrintWriter sobrescritor = new PrintWriter(escritor)) {
             sobrescritor.println(fileId.toString() + '#' + uploadArquivo.getName() + '=' + metadados + '@' + getTipoArquivo(uploadArquivo) + '$' + 0 + ';');
             sobrescritor.flush();
         }
@@ -58,21 +63,23 @@ public class RecordFiles
         FileReader leitor = new FileReader(bancoArquivos);
         int c;
         
-        String leitura = null;
+        String leitura = "";
        
               
         while ((c = leitor.read()) != -1)
         {
             if ((char)c == '\n')
             {
-                leitor.mark(40);
+                while ((c = leitor.read()) != '#' || ((c != -1)))
+                {
+                    if (c == '#')
+                        break;
+                    if (c== -1)
+                        break;
+                    leitura = "";
+                    leitura = leitura + (char)c;
+                }
             }
-            
-        }
-        leitor.reset();
-        while ((c=leitor.read()) != '#') 
-        {
-            leitura = leitura + (char)c;
         }
         return Long.parseLong(leitura);
     }

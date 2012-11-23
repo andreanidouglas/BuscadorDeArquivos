@@ -7,10 +7,11 @@ int main(int argc, char* argv[])
 {
    if (argc != 2)
     {
-        exit(1);
+        //exit(1);
+        system("Pause");
     }
     printf("\nArgumento: %d", atoi(argv[1]));
-
+    system("Pause");
     if (atoi(argv[1]) == 1)
     {
         verificaLogin();
@@ -34,7 +35,7 @@ int abreArquivo (FILE **arquivo, char caminho[], char mode[])
 		*arquivo = fopen(path, mode);
 		if (*arquivo != NULL)
 		{
-			printf("\nCriou arquivo...");
+			printf("\nCriou arquivo... %s", caminho);
 			return(1);
 		}
 		tentativas++;

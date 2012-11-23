@@ -3,6 +3,8 @@ package BuscaAutomato;
 import BuscaAutomato.UploadFiles.UploadFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -53,7 +55,12 @@ public class MainFrameAutomato extends JFrame implements ActionListener
         Object objetoEvento = evento.getSource();
         if (objetoEvento == btnBusca)
         {
-            
+            BuscadorAutomato busca = new BuscadorAutomato();
+            try {
+                busca.lerXML();
+            } catch (Exception ex) {
+                Logger.getLogger(MainFrameAutomato.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         
         if(objetoEvento == btnUpload)

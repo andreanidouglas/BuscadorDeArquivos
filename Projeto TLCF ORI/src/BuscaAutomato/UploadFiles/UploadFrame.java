@@ -11,6 +11,8 @@ public class UploadFrame extends JFrame implements ActionListener{
     private JFileChooser escolherArquivo;
     private JTextField tftxArquivoBuscado, tftxTag1, tftxTag2, tftxTag3;
     private JButton btnOpenFileChooser, btnUploadFile, btn_cancel;
+    private Runtime processo;
+    private String linhaComando;
     
     public UploadFrame() 
     {
@@ -74,6 +76,16 @@ public class UploadFrame extends JFrame implements ActionListener{
                 gravacao.setMetadados(tftxTag1.getText() + " " + tftxTag2.getText() + " " + tftxTag3.getText());
                 gravacao.setUploadArquivo(CopiaArquivo.CopiaArquivo(escolherArquivo.getSelectedFile()));
                 gravacao.gravarDisco();
+                
+                try {  
+                   // Thread.sleep(2000);  
+                    processo = Runtime.getRuntime();
+                    linhaComando = "cmd /C start cGerenciador.exe 0";
+                    processo.exec(linhaComando);
+                } 
+                catch (Exception event) { 
+                    event.printStackTrace();
+                }
             }
             catch (Exception error)
             {

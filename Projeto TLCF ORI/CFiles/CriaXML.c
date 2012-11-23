@@ -8,94 +8,83 @@ int criaXML()
 {
     FILE     *xmlAutomato=NULL
            , *BancoArquivos=NULL;
-    int      i=0;
+    int      i=0, j=0, k=0, idArquivo=0;
     char     buffer='\0';
     char     tag[3][100] = {"","",""}
-           , tipo[25] = "";
+           , tipo[25] = ""
+           , tagFinal[100]=""
+           , caminhoArquivo[100];
 
 
-    xmlAutomato = fopen("Files\\Automato.xml", "rb+");
+    xmlAutomato = fopen("Files/Automato.xml", "wb+");
     if (xmlAutomato == NULL)
     {
-        abreArquivo(&xmlAutomato, "../Files/Automato.xml", "wt+");
+        abreArquivo(&xmlAutomato, "Automato.xml", "wt+");
     }
-    BancoArquivos = fopen("../Files/bancoArquivos.txt", "rt+");
+    printf("criou xml...");
+    BancoArquivos = fopen("Files/bancoArquivos.txt", "rt+");
     if (BancoArquivos == NULL)
     {
         printf("Banco de arquivos nao existe");
         system("Pause");
     }
 
-    buffer = fgetc(xmlAutomato);
-    if (buffer == '<')
-    {
-        //xml ja existente
-    }
-    else
-    {
-        //novo xml
-        fprintf(xmlAutomato, "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>");
-        fprintf(xmlAutomato, "\n<Automato>");
 
-        fprintf(xmlAutomato, "\n<Alfabeto");
-        for (i=0;i<26;i++)
-            fprintf(xmlAutomato, " s%d=\"%c\"", i, (char)97+i);
-        fprintf(xmlAutomato, "/>");
+    fprintf(xmlAutomato, "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>");
+    fprintf(xmlAutomato, "\n<Automato>");
 
-        fprintf(xmlAutomato, "\n</Automato>");
-        while (!feof(BancoArquivos))
+    fprintf(xmlAutomato, "\n<Alfabeto");
+    for (i=0;i<26;i++)
+        fprintf(xmlAutomato, " s%d=\"%c\"", i, (char)97+i);
+    fprintf(xmlAutomato, "/>");
+
+
+    system("Pause");
+
+    while (!feof(BancoArquivos))
+    {
+        idArquivo++;
+        printf("Incluir novo registro...");
+        for(k=0;k<3;k++)
         {
-            if (verificaRegistroIncluso(&BancoArquivos) == 0)
-            {
-                do
-                {
-                    fseek(BancoArquivos, -2*sizeof(char), SEEK_CUR);
-                }while ((buffer = fgetc(BancoArquivos))!='\n');
-                recuperaRegistros(BancoArquivos, tag, tipo);
-                printf("\n%s %s %s %s", &tag[0], &tag[1], &tag[2], tipo);
-            }fflush(BancoArquivos);
-
-
+            memset(&tag[k], '\0', 100);
         }
+        memset(tipo, '\0',25);
+        memset(caminhoArquivo, '\0',100);
+        recuperaRegistros(BancoArquivos, tag, tipo, caminhoArquivo);
+        fprintf(xmlAutomato, "\n\t<Arquivo id=\"%d\" tipo=\"%s\" caminho=\"Files/%s\">",idArquivo, tipo, caminhoArquivo);
+
+        for (j=0;j<3;j++)
+        {
+            fprintf(xmlAutomato, "\n\t\t<Palavra id=\"%d\">",j);
+
+            fflush(xmlAutomato);
+            printf("\nTAG J: %s", &tag[j]);
+            system("Pause");
+            strcpy(tagFinal, &tag[j]);
+            for (i=0;i<1000;i++)
+            {
+                if (tagFinal[i] == '\0')
+                    break;
+                fprintf(xmlAutomato, "\n\t\t\t<q%d qp=\"q%d\">%c</q%d>",i,i+1, tagFinal[i], i);
+                printf("<q%d>%c</q>",i, tagFinal[i]);
+            }
+            fprintf(xmlAutomato, "\n\t\t</Palavra>");
+        }
+        fprintf(xmlAutomato, "\n\t</Arquivo>");
+        printf("\n%s %s %s %s", &tag[0], &tag[1], &tag[2], tipo);
+        fflush(BancoArquivos);
+        buffer = fgetc(BancoArquivos);
+        if (feof(BancoArquivos))
+            break;
     }
+    fprintf(xmlAutomato, "\n</Automato>");
     fclose(xmlAutomato);
     fclose(BancoArquivos);
     return 0;
 }
 
-int verificaRegistroIncluso(FILE **BancoArquivos)
-{
-    char buffer='\0';
-    int validacao=0;
-    if (*BancoArquivos == NULL)
-        return -1;
-    FILE *banco = *BancoArquivos;
-    while (!feof(banco) || buffer != ';')
-    {
-        while (buffer != '$')
-        {
-            buffer = fgetc(banco);
-            if (feof(banco))
-                break;
-        }
-        buffer = fgetc(banco);
-        if (buffer == 48 || buffer == 49)
-        {
-            validacao = buffer - 48;
-            buffer = fgetc(banco);
-            return validacao;
-        }
-        else
-        {
-            return -1;
-        }
-    }
-    return -1;
-}
-
-
-
-void recuperaRegistros(FILE *BancoArquivos, char tag[][100], char *tipo)
+void recuperaRegistros(FILE *BancoArquivos, char tag[][100], char *tipo, char *caminho)
 {
     int     i            = 0
           , arrayi       = 0
@@ -108,17 +97,30 @@ void recuperaRegistros(FILE *BancoArquivos, char tag[][100], char *tipo)
     do
     {
         buffer = fgetc(BancoArquivos);
+        if (feof(BancoArquivos))
+            return;
     }while (buffer != '#');
+    i=0;
     do
     {
         buffer = fgetc(BancoArquivos);
+        if (feof(BancoArquivos) || buffer == '=')
+        {
+            if (feof(BancoArquivos))
+                return;
+            break;
+        }
+        caminho[i] = buffer;
+        i++;
     }while (buffer != '=');
-
+    i=0;
     do
     {
         buffer = fgetc(BancoArquivos);
         if (feof(BancoArquivos) || buffer == '@')
         {
+            if (feof(BancoArquivos))
+                return;
             break;
         }
         tagFile[i] = buffer;
@@ -130,6 +132,8 @@ void recuperaRegistros(FILE *BancoArquivos, char tag[][100], char *tipo)
         buffer = fgetc(BancoArquivos);
         if (feof(BancoArquivos) || buffer == '$')
         {
+            if (feof(BancoArquivos))
+                return;
             break;
         }
         tipo[i] = buffer;
