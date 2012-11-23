@@ -60,13 +60,12 @@ int criaXML()
 
             fflush(xmlAutomato);
             printf("\nTAG J: %s", &tag[j]);
-            system("Pause");
             strcpy(tagFinal, &tag[j]);
             for (i=0;i<1000;i++)
             {
                 if (tagFinal[i] == '\0')
                     break;
-                fprintf(xmlAutomato, "\n\t\t\t<q%d qp=\"q%d\">%c</q%d>",i,i+1, tagFinal[i], i);
+                fprintf(xmlAutomato, "\n\t\t\t<q id=\"%d\" qp=\"q%d\">%c</q>",i,i+1, tagFinal[i]);
                 printf("<q%d>%c</q>",i, tagFinal[i]);
             }
             fprintf(xmlAutomato, "\n\t\t</Palavra>");

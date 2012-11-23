@@ -3,759 +3,799 @@
 <Alfabeto s0="a" s1="b" s2="c" s3="d" s4="e" s5="f" s6="g" s7="h" s8="i" s9="j" s10="k" s11="l" s12="m" s13="n" s14="o" s15="p" s16="q" s17="r" s18="s" s19="t" s20="u" s21="v" s22="w" s23="x" s24="y" s25="z"/>
 	<Arquivo id="1" tipo="Imagem" caminho="Files/4.jpg">
 		<Palavra id="0">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">1</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">1</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">2</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">2</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="2" tipo="Imagem" caminho="Files/ffe9279e67a111e180d51231380fcd7e_7.jpg">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">a</q0>
-			<q1 qp="q2">s</q1>
-			<q2 qp="q3">d</q2>
-			<q3 qp="q4">a</q3>
-			<q4 qp="q5">s</q4>
-			<q5 qp="q6">d</q5>
+			<q id="0" qp="q1">a</q>
+			<q id="1" qp="q2">s</q>
+			<q id="2" qp="q3">d</q>
+			<q id="3" qp="q4">a</q>
+			<q id="4" qp="q5">s</q>
+			<q id="5" qp="q6">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">f</q0>
-			<q1 qp="q2">q</q1>
-			<q2 qp="q3">f</q2>
-			<q3 qp="q4">q</q3>
-			<q4 qp="q5">f</q4>
-			<q5 qp="q6">e</q5>
+			<q id="0" qp="q1">f</q>
+			<q id="1" qp="q2">q</q>
+			<q id="2" qp="q3">f</q>
+			<q id="3" qp="q4">q</q>
+			<q id="4" qp="q5">f</q>
+			<q id="5" qp="q6">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="3" tipo="Imagem" caminho="Files/4180dc54684911e180c9123138016265_7.jpg">
 		<Palavra id="0">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">1</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">1</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">2</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">2</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="4" tipo="Imagem" caminho="Files/4180dc54684911e180c9123138016265_7.jpg">
 		<Palavra id="0">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">1</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">1</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">2</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">2</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="5" tipo="Imagem" caminho="Files/4180dc54684911e180c9123138016265_7.jpg">
 		<Palavra id="0">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">1</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">1</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">2</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">2</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="6" tipo="Imagem" caminho="Files/4180dc54684911e180c9123138016265_7.jpg">
 		<Palavra id="0">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">1</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">1</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">2</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">2</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="7" tipo="Imagem" caminho="Files/4180dc54684911e180c9123138016265_7.jpg">
 		<Palavra id="0">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">1</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">1</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">2</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">2</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="8" tipo="Imagem" caminho="Files/4180dc54684911e180c9123138016265_7.jpg">
 		<Palavra id="0">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">1</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">1</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">2</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">2</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="9" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="10" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="11" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="12" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="13" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="14" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="15" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="16" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="17" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="18" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="19" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="20" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="21" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="22" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="23" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="24" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="25" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="26" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
 	<Arquivo id="27" tipo="Texto" caminho="Files/TeamSpeak 3.txt">
 		<Palavra id="0">
-			<q0 qp="q1">1</q0>
-			<q1 qp="q2">2</q1>
-			<q2 qp="q3">3</q2>
-			<q3 qp="q4">1</q3>
-			<q4 qp="q5">2</q4>
-			<q5 qp="q6">3</q5>
+			<q id="0" qp="q1">1</q>
+			<q id="1" qp="q2">2</q>
+			<q id="2" qp="q3">3</q>
+			<q id="3" qp="q4">1</q>
+			<q id="4" qp="q5">2</q>
+			<q id="5" qp="q6">3</q>
 		</Palavra>
 		<Palavra id="1">
-			<q0 qp="q1">d</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">s</q2>
-			<q3 qp="q4">d</q3>
-			<q4 qp="q5">a</q4>
-			<q5 qp="q6">s</q5>
-			<q6 qp="q7">d</q6>
+			<q id="0" qp="q1">d</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">s</q>
+			<q id="3" qp="q4">d</q>
+			<q id="4" qp="q5">a</q>
+			<q id="5" qp="q6">s</q>
+			<q id="6" qp="q7">d</q>
 		</Palavra>
 		<Palavra id="2">
-			<q0 qp="q1">t</q0>
-			<q1 qp="q2">a</q1>
-			<q2 qp="q3">g</q2>
-			<q3 qp="q4">3</q3>
-			<q4 qp="q5">q</q4>
-			<q5 qp="q6">w</q5>
-			<q6 qp="q7">e</q6>
-			<q7 qp="q8">q</q7>
-			<q8 qp="q9">w</q8>
-			<q9 qp="q10">e</q9>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+			<q id="4" qp="q5">q</q>
+			<q id="5" qp="q6">w</q>
+			<q id="6" qp="q7">e</q>
+			<q id="7" qp="q8">q</q>
+			<q id="8" qp="q9">w</q>
+			<q id="9" qp="q10">e</q>
 		</Palavra>
 	</Arquivo>
-	<Arquivo id="28" tipo="" caminho="Files/">
+	<Arquivo id="28" tipo="Imagem" caminho="Files/5.jpg">
+		<Palavra id="0">
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">1</q>
+		</Palavra>
+		<Palavra id="1">
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">2</q>
+		</Palavra>
+		<Palavra id="2">
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+		</Palavra>
+	</Arquivo>
+	<Arquivo id="29" tipo="Imagem" caminho="Files/8ed9d1b0357f11e1a87612313804ec91_7.jpg">
+		<Palavra id="0">
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">1</q>
+		</Palavra>
+		<Palavra id="1">
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">2</q>
+		</Palavra>
+		<Palavra id="2">
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
+		</Palavra>
+	</Arquivo>
+	<Arquivo id="30" tipo="" caminho="Files/">
 		<Palavra id="0">
 		</Palavra>
 		<Palavra id="1">

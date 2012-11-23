@@ -26,3 +26,5 @@ Banco Arquivos:
 5#TeamSpeak 3.txt=123123 dasdasd tag3qweqwe@Texto$1;
 6#TeamSpeak 3.txt=123123 dasdasd tag3qweqwe@Texto$1;
 7#TeamSpeak 3.txt=123123 dasdasd tag3qweqwe@Texto$1;
+8#5.jpg=tag1 tag2 tag3@Imagem$1;
+9#8ed9d1b0357f11e1a87612313804ec91_7.jpg=tag1 tag2 tag3@Imagem$1;

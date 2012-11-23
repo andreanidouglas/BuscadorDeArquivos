@@ -15,7 +15,10 @@ public class MainFrameAutomato extends JFrame implements ActionListener
     private JTextField tftxcampoBusca;
     private JLabel lblCampoBusca;
     private JButton btnBusca, btnUpload;
-
+    private String textoBusca, tipo;
+    private String[] textos;
+    private int i;
+    private String[] retornoBusca;
     public MainFrameAutomato()
     {
         setBounds (350,150,700,480);
@@ -55,10 +58,35 @@ public class MainFrameAutomato extends JFrame implements ActionListener
         Object objetoEvento = evento.getSource();
         if (objetoEvento == btnBusca)
         {
+            textoBusca = tftxcampoBusca.getText();
+            
+            if (textoBusca.isEmpty())
+            {
+                return;
+            }
             BuscadorAutomato busca = new BuscadorAutomato();
-            try {
-                busca.lerXML();
-            } catch (Exception ex) {
+            try 
+            {
+                textos = textoBusca.split("[ ]");
+                tipo = "";
+                for (i=0; i<textos.length;i++)
+                {
+                    if(textos[i].equals("Imagem"))
+                        tipo = "Imagem";
+                    if(textos[i].equals("Audio"))
+                        tipo = "Audio";
+                    if(textos[i].equals("Texto"))
+                        tipo = "Texto";
+                }
+                for(i=0;i<textos.length;i++)
+                {
+                    tipo = tipo.trim();
+                    retornoBusca = busca.lerXML(textos[i], tipo);
+                    if (retornoBusca != null)
+                        tftxcampoBusca.setText(retornoBusca[0]);
+                }
+            } 
+            catch (Exception ex) {
                 Logger.getLogger(MainFrameAutomato.class.getName()).log(Level.SEVERE, null, ex);
             }
         }

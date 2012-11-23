@@ -14,16 +14,20 @@ public class BuscadorAutomato
     private Element tagsAgrupamento, listaArquivos, listaPalavras, listaEstados;
     private NodeList listaTagsArquivo, ArquivoChilds, listaTagsPalavras, listaTagsEstados; 
     private NamedNodeMap atributos;  
-    public static String idArquivo,tipoArquivo, caminhoArquivo, idPalavra, proxEstado, letraAutomato;
-    int i,j,k, totalTagsArquivo;    
+    public static String idArquivo,tipoArquivo, caminhoArquivo, idPalavra, proxEstado, letraAutomato, idEstado;
+    int i,j,k,l,m, totalTagsArquivo; 
+    char[] stringBusca;
+    private String[] retornoResultado, vazio;
    
     public BuscadorAutomato() {
     }
     
     
-    public void lerXML()throws Exception
+    public String[] lerXML(String busca, String tipo)throws Exception
     {
-         
+        stringBusca = busca.toCharArray();
+        m=1;
+        vazio=null;
         construtorDocumento = DocumentBuilderFactory.newInstance();
         parser = construtorDocumento.newDocumentBuilder();
         documentoXML = parser.parse("Files/Automato.xml");
@@ -37,36 +41,55 @@ public class BuscadorAutomato
 
             System.out.println("Total de Tags <Arquivo> = " + totalTagsArquivo);
 
-            for (i = 0; i < totalTagsArquivo; i++) 
+            for (i=0; i < totalTagsArquivo; i++) 
             {
                 listaArquivos = (Element)listaTagsArquivo.item(i);
                 idArquivo = listaArquivos.getAttribute("id");
                 tipoArquivo = listaArquivos.getAttribute("tipo");
                 caminhoArquivo = listaArquivos.getAttribute("caminho");
+                if(!tipo.isEmpty() && !tipo.equals(tipoArquivo))
+                {
+                    return vazio;
+                }
                 listaTagsPalavras = listaArquivos.getElementsByTagName("Palavra");
+                System.out.println("id tipo caminho:" + idArquivo + tipoArquivo + caminhoArquivo);
+                
 
                 for (j=0; j<listaTagsPalavras.getLength();j++)
                 {
-                    listaPalavras = (Element)listaTagsPalavras.item(i);
+                    listaPalavras = (Element)listaTagsPalavras.item(j);
                     idPalavra = listaPalavras.getAttribute("id");
-                    listaTagsEstados = listaPalavras.getElementsByTagName("q"+j);
+                    listaTagsEstados = listaPalavras.getElementsByTagName("q");
+                    System.out.println("id palavra" + idPalavra + listaTagsPalavras.getLength() + j);
 
                     for(k=0; k<listaTagsEstados.getLength();k++)
                     {
-                        listaEstados = (Element)listaTagsEstados.item(i);
+                        listaEstados = (Element)listaTagsEstados.item(k);
+                        
                         letraAutomato = listaEstados.getTextContent();
                         proxEstado = listaEstados.getAttribute("qp");
+                        idEstado = listaEstados.getAttribute("id");
+                        letraAutomato = listaEstados.getTextContent();
+                        System.out.println("letra Proxestado:" + letraAutomato + proxEstado);
+                        
+                        if(stringBusca[k] != letraAutomato.charAt(0))
+                        {
+                            return vazio;
+                        }
                     }
-                }    
+                    retornoResultado[m] = caminhoArquivo.toLowerCase();
+                    m++;
+                }
+                
             }
-            
-	          		     		         		     		
+            return retornoResultado;    		
      	}
      	catch(Exception erro)
      	{
      		System.out.println("Erro de processamento do documento XML \n" + erro.getStackTrace());
                 
      	}   
+        return null;
     }
     
 }
