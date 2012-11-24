@@ -21,7 +21,31 @@
 			<q id="3" qp="q4">3</q>
 		</Palavra>
 	</Arquivo>
-	<Arquivo id="2" tipo="Imagem" caminho="Files/Desert.jpg">
+	<Arquivo id="2" tipo="Imagem" caminho="Files/Jellyfish.jpg">
+		<Palavra id="0">
+			<q id="0" qp="q1">p</q>
+			<q id="1" qp="q2">e</q>
+			<q id="2" qp="q3">i</q>
+			<q id="3" qp="q4">x</q>
+			<q id="4" qp="q5">e</q>
+		</Palavra>
+		<Palavra id="1">
+			<q id="0" qp="q1">m</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">r</q>
+		</Palavra>
+		<Palavra id="2">
+			<q id="0" qp="q1">a</q>
+			<q id="1" qp="q2">g</q>
+			<q id="2" qp="q3">u</q>
+			<q id="3" qp="q4">a</q>
+			<q id="4" qp="q5">v</q>
+			<q id="5" qp="q6">i</q>
+			<q id="6" qp="q7">v</q>
+			<q id="7" qp="q8">a</q>
+		</Palavra>
+	</Arquivo>
+	<Arquivo id="3" tipo="Imagem" caminho="Files/Desert.jpg">
 		<Palavra id="0">
 			<q id="0" qp="q1">d</q>
 			<q id="1" qp="q2">e</q>
@@ -39,41 +63,40 @@
 			<q id="4" qp="q5">a</q>
 		</Palavra>
 		<Palavra id="2">
-			<q id="0" qp="q1">d</q>
-			<q id="1" qp="q2">u</q>
-			<q id="2" qp="q3">n</q>
-			<q id="3" qp="q4">a</q>
-			<q id="4" qp="q5">s</q>
+			<q id="0" qp="q1">t</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">g</q>
+			<q id="3" qp="q4">3</q>
 		</Palavra>
 	</Arquivo>
-	<Arquivo id="3" tipo="Imagem" caminho="Files/Koala.jpg">
+	<Arquivo id="4" tipo="Imagem" caminho="Files/curta-no-facebook.png">
 		<Palavra id="0">
-			<q id="0" qp="q1">k</q>
-			<q id="1" qp="q2">o</q>
-			<q id="2" qp="q3">a</q>
-			<q id="3" qp="q4">l</q>
-			<q id="4" qp="q5">a</q>
+			<q id="0" qp="q1">f</q>
+			<q id="1" qp="q2">a</q>
+			<q id="2" qp="q3">c</q>
+			<q id="3" qp="q4">e</q>
+			<q id="4" qp="q5">b</q>
+			<q id="5" qp="q6">o</q>
+			<q id="6" qp="q7">o</q>
+			<q id="7" qp="q8">k</q>
 		</Palavra>
 		<Palavra id="1">
-			<q id="0" qp="q1">a</q>
-			<q id="1" qp="q2">n</q>
-			<q id="2" qp="q3">i</q>
-			<q id="3" qp="q4">m</q>
+			<q id="0" qp="q1">s</q>
+			<q id="1" qp="q2">o</q>
+			<q id="2" qp="q3">c</q>
+			<q id="3" qp="q4">i</q>
 			<q id="4" qp="q5">a</q>
 			<q id="5" qp="q6">l</q>
 		</Palavra>
 		<Palavra id="2">
 			<q id="0" qp="q1">m</q>
-			<q id="1" qp="q2">a</q>
-			<q id="2" qp="q3">m</q>
+			<q id="1" qp="q2">i</q>
+			<q id="2" qp="q3">d</q>
 			<q id="3" qp="q4">i</q>
-			<q id="4" qp="q5">f</q>
-			<q id="5" qp="q6">e</q>
-			<q id="6" qp="q7">r</q>
-			<q id="7" qp="q8">o</q>
+			<q id="4" qp="q5">a</q>
 		</Palavra>
 	</Arquivo>
-	<Arquivo id="4" tipo="" caminho="Files/">
+	<Arquivo id="5" tipo="" caminho="Files/">
 		<Palavra id="0">
 		</Palavra>
 		<Palavra id="1">

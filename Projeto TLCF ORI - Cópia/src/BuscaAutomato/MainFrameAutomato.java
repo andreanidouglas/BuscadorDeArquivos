@@ -126,7 +126,7 @@ public class MainFrameAutomato extends JFrame implements ActionListener
                         }
                         j++;
                     }
-                    if (caminhoFinal == null)
+                    if (caminhoFinal == "0")
                         lblCaminho.setText("NÃO ENCONTRADO");
                 }
             } 
