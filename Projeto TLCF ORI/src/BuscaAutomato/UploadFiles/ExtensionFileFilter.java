@@ -1,3 +1,13 @@
+/*
+ * Atençao
+ * Todo o conteudo desta classe foi retirada da interner devido a complexidade
+ * apresentada. Por favor, nao considere esta para a nota final.
+ * 
+ */
+
+
+
+
 package BuscaAutomato.UploadFiles;
 
 import java.io.File;

@@ -16,7 +16,7 @@ public class MainFrameAutomato extends JFrame implements ActionListener
     private String textoBusca, tipo;
     private String[] textos;
     private int i;
-    private String retornoBusca;
+    private String retornoBusca, caminhoFinal;
     private String caminhoarquivo = "Files/search.png";
     ImageIcon img_result;
     
@@ -119,8 +119,11 @@ public class MainFrameAutomato extends JFrame implements ActionListener
                     {
                         retornoBusca = busca.lerXML(textos[i], tipo, j);
                         if (retornoBusca != null)
+                        {
                             tftxcampoBusca.setText(retornoBusca);
-                          System.out.println("retorno busca"+ retornoBusca);
+                            System.out.println("retorno busca"+ retornoBusca);
+                            caminhoFinal = retornoBusca;
+                        }
                         j++;
                     }      
                 }
@@ -141,19 +144,53 @@ public class MainFrameAutomato extends JFrame implements ActionListener
         {
             caminhoarquivo = "\"" + tftxcampoBusca.getText() + "\"";
             lbl_result = new JLabel(new ImageIcon(caminhoarquivo));
-            lblCaminho.setText("Caminho: " + caminhoarquivo);
-            lblCaminho.setBounds(05,420,320,25);            
+            lblCaminho.setText("Caminho: " + caminhoFinal);
+            lblCaminho.setBounds(05,420,320,25);
+            try
+            {
+                    processo = Runtime.getRuntime();
+                    linhaComando = "cmd /C start " + caminhoFinal;
+                    Process exec = processo.exec(linhaComando);
+            }
+            catch (IOException ex)
+            {
+                Logger.getLogger(MainFrameAutomato.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
-        
         if(objetoEvento == btnresultA)
         {
-            
+            caminhoarquivo = "\"" + tftxcampoBusca.getText() + "\"";
+            lbl_result = new JLabel(new ImageIcon(caminhoarquivo));
+            lblCaminho.setText("Caminho: " + caminhoFinal);
+            lblCaminho.setBounds(05,420,320,25);
+            try
+            {
+                    processo = Runtime.getRuntime();
+                    linhaComando = "cmd /C start " + caminhoFinal;
+                    Process exec = processo.exec(linhaComando);
+            }
+            catch (IOException ex)
+            {
+                Logger.getLogger(MainFrameAutomato.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         
         if(objetoEvento == btnresultV)
         {
-            
+            caminhoarquivo = "\"" + tftxcampoBusca.getText() + "\"";
+            lbl_result = new JLabel(new ImageIcon(caminhoarquivo));
+            lblCaminho.setText("Caminho: " + caminhoFinal);
+            lblCaminho.setBounds(05,420,320,25);
+            try
+            {
+                    processo = Runtime.getRuntime();
+                    linhaComando = "cmd /C start " + caminhoFinal;
+                    Process exec = processo.exec(linhaComando);
+            }
+            catch (IOException ex)
+            {
+                Logger.getLogger(MainFrameAutomato.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
-
 }
