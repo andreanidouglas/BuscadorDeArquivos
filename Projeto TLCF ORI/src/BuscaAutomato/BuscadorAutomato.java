@@ -87,6 +87,8 @@ public class BuscadorAutomato
                     System.out.println(caminhoArquivo.toLowerCase());
                     retorno = caminhoArquivo.toLowerCase();
                     m++;
+                    return retorno;
+                    
                 }
                 
             }
