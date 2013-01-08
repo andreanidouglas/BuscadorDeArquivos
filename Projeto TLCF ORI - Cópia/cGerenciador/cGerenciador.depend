@@ -1,0 +1,105 @@
+# depslib dependency file v1.0
+1189868556 source:c:\users\douglas\documents\netbeansprojects\oritclf\oritclf\projeto tlcf ori\cgerenciador\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1348872869 source:c:\users\douglas\documents\netbeansprojects\oritclf\oritclf\projeto tlcf ori\cfiles\reglogin.c
+	<stdio.h>
+	"CLib/libFiles.h"
+
+1353630846 c:\users\douglas\documents\netbeansprojects\oritclf\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1349962601 source:c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\reglogin.c
+	<stdio.h>
+	"CLib/libFiles.h"
+
+1353681482 c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1353365220 source:c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\verificalogin.c
+	<stdio.h>
+	<stdlib.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353702862 source:c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\criaxml.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353659804 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\criaxml.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353039682 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\verificalogin.c
+	<stdio.h>
+	<stdlib.h>
+	"../CFiles/CLib/libFiles.h"
+
+1349999656 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\reglogin.c
+	<stdio.h>
+	"CLib/libFiles.h"
+
+1353657874 c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1353623598 source:c:\users\douglas\documents\netbeansprojects\oritclf\oritclf\projeto tlcf ori\cfiles\verificalogin.c
+	<stdio.h>
+	<stdlib.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353631007 source:c:\users\douglas\documents\netbeansprojects\oritclf\oritclf\projeto tlcf ori\cfiles\criaxml.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353625752 source:c:\users\douglas\documents\netbeansprojects\oritclf\oritclf\projeto tlcf ori\cfiles\bancousuarios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353657874 source:c:\users\doug3\documents\github\oritclf\projeto tlcf ori\cfiles\bancousuarios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353702862 source:c:\users\guilherme ricarte\documents\github\oritclf\projeto tlcf ori\cfiles\bancousuarios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353131653 source:c:\users\douglas\documents\github\oritclf\projeto tlcf ori\cfiles\bancousuarios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353133925 c:\users\douglas\documents\github\oritclf\projeto tlcf ori\cfiles\clib\libfiles.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1353126699 source:c:\users\douglas\documents\github\oritclf\projeto tlcf ori\cfiles\verificalogin.c
+	<stdio.h>
+	<stdlib.h>
+	"../CFiles/CLib/libFiles.h"
+
+1353137730 source:c:\users\douglas\documents\github\oritclf\projeto tlcf ori\cfiles\criaxml.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../CFiles/CLib/libFiles.h"
+
