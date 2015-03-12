@@ -1,9 +1,10 @@
-DESCRIÇÃO DO TRABALHO DE ORGANIZAÇÃO E RECUPERAÇÃO DA INFORMAÇÃO E TEORIA DA COMPUTAÇÃO E LINGUAGENS FORMAIS:
+###TRABALHO DE ORGANIZAÇÃO E RECUPERAÇÃO DA INFORMAÇÃO ###
+###TEORIA DA COMPUTAÇÃO E LINGUAGENS FORMAIS###
 
-Por:
-    Douglas Ravanelli Andreani http://www.cmtedouglas.com.br
-    Guilherme Ricarte
+###Alunos
+    1. Douglas Ravanelli Andreani 
+    2. Guilherme Ricarte
 
-Professores:
-    Will Ricardo
-    João Benedito
+###Professores
+    1. Will Ricardo
+    2. João Benedito
